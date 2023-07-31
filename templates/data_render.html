@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>my name is</h1>
+    {% for chr in name %}
+    <h1>{{chr}}</h1>
+    {% endfor %}
+    <h1>{{age}}</h1>
+    {%  for var in hobbies %}
+    <h1>{{var}}</h1>
+    {% endfor %}
+    <h1><a href="{% url 'conditions' %}">click here to go conditions page</a></h1>
+    </center>
+</body>
+</html>

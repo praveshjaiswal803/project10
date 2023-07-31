@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+
+        <h1>NESTED LOOP IF-ELSE CONDITION</h1>
+        {% if a > b %}
+            {% if a > c %}
+                <h1> a is maximum{{a}}</h1>
+            {% else %}
+                <h1>c is maximum{{c}}</h1>
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+                <h1>b is maximum{{b}}<h1>
+            {% else %}
+                <h1>c is maximum{{c}}</h1>
+            {% endif %}
+        {% endif %} 
+        <h1><a href="{% url 'data_render' %}">click here to go data_render page</a></h1>   
+    </center>
+    
+
+</body>
+</html>
